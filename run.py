@@ -1,9 +1,8 @@
 from server import keep
-import os
+from os import name,system
 
-with open("cmd.txt","r") as f:
-    cmd=f.read()
-    f.close()
+cmd=input("[#]Insert command to run your script")
 
 keep()
-os.system(cmd)
+system("cls") if name=="nt" else system("clear")
+system(cmd)
