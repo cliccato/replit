@@ -1,2 +1,0 @@
-Delete this rows and insert the command to run your script
-Example: go run main.go
