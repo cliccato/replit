@@ -1,6 +1,9 @@
 from server import keep
 import os
 
-cmd="example"
+with open("cmd.txt","r") as f:
+    cmd=f.read()
+    f.close()
+
 keep()
 os.system(cmd)
