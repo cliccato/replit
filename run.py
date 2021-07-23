@@ -1,8 +1,14 @@
-from server import keep
+from flask import Flask
+from threading import Thread
 from os import name,system
 
-cmd=input("[#]Insert command to run your script")
+app = Flask('')
+@app.route('/')
 
-keep()
+def home():    return "I'm alive"
+def run():    app.run(host='0.0.0.0',port=8080)
+Thread(target=run).start()
+
+cmd=input("[#]Insert command to run your script")
 system("cls") if name=="nt" else system("clear")
 system(cmd)
