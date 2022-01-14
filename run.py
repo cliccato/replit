@@ -10,5 +10,5 @@ def run():    app.run(host='0.0.0.0',port=8080)
 Thread(target=run).start()
 
 cmd=input("[#]Insert command to run your script")
-system("cls") if name=="nt" else system("clear")
+system("clear")
 system(cmd)
