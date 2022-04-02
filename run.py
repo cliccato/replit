@@ -1,6 +1,6 @@
 from flask import Flask
 from threading import Thread
-from os import name,system
+from os import system
 
 app = Flask('')
 @app.route('/')
